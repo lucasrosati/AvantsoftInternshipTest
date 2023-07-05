@@ -1,7 +1,7 @@
 
 # Avantsoft Processo Seletivo de Estágio
 
-Avantsoft Internship Test, which consisted of consuming an API with PHP and displaying a frontend paginated table with 5 pages, each one containing 10 users.
+Teste de estágio da Avantsoft, que consistia em consumir uma API com PHP e exibir uma tabela paginada de frontend com 5 páginas, cada uma contendo 10 usuários.
 
 ## Funcionalidades
 - Consumir uma API que retorna um arquivo .JSON e exibi-lo em uma tabela paginada em HTML.
