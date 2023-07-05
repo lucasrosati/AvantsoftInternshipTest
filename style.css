@@ -1,0 +1,123 @@
+h1 {
+    text-align: center;
+    font-size: 64px;
+  }
+  
+tr{
+    text-align: center;
+}
+
+body{
+    margin: 0;
+    width: 100vw;
+    height:100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#demo{
+    position: absolute;
+    top:-15px;
+    bottom: 800px;
+    right: 50px;
+    z-index: 1;
+    padding: 0px;
+    margin: 0px;
+}
+label {
+    cursor: pointer;
+    transition: 0.3s;
+}
+label:after {
+    content:"";
+    width:80px;
+    height: 80px;
+    position:absolute;
+    top:30px;
+    left:10px;
+    background: linear-gradient(180deg,#ffcc89,#d8860b);
+    border-radius: 80px;
+    box-shadow: 0px 5px 10px rgba(0,0,0,0);
+    transition: 0.3s;
+}
+input{
+    width: 0;
+    height: 0 ;
+    visibility: hidden ;
+}
+input:checked + label{
+    background:#242424
+    
+}
+input:checked + label:after{
+    top:30px;
+    left:270px;
+    transform: translateX(-105%);
+    background: linear-gradient(160deg,#777,#3a3a3a);
+}
+label:active:after{
+    width:260px;
+}
+.background{
+    width: 100vw;
+    height: 100vh;
+    background: #fff;
+    z-index: -1;
+    position: absolute;
+    transition: 0.3s;
+}
+input:checked + label + .background{
+    background:#242424
+}
+label svg{
+    position:absolute;
+    width:100px ;
+    top: 35px;
+    z-index: 190;
+}
+label svg.sun{
+    top:52px;
+    left:33px;
+    bottom:50px;
+    fill:#fff;
+    transition:0.3s;
+    width: 35px;
+}
+label svg.moon{
+    top:50px;
+    left:210px;
+    fill:#7e7e7e;
+    transition:0.3s;
+    width: 35px;
+}
+input:checked + label svg.sun{
+    fill:#7e7e7e;
+}
+input:checked + label svg.moon{
+    fill:#fff;
+}
+
+.darkmode-toggle:checked ~ .background {
+    background-color: #000;
+  }
+  
+  .darkmode-toggle:checked ~ h1,
+  .darkmode-toggle:checked ~ table th,
+  .darkmode-toggle:checked ~ table td {
+    color: #fff;
+  }
+  
+  .darkmode-toggle:checked ~ table {
+    background-color: #000;
+  } 
+  
+  .darkmode-toggle:checked ~ table th {
+    background-color: #000;
+    border-color: #fff;
+  }
+  
+  .darkmode-toggle:checked ~ table td {
+    border-color: #000;
+  } 
