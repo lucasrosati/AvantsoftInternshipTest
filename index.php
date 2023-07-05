@@ -3,7 +3,7 @@ $url = 'https://run.mocky.io/v3/ce47ee53-6531-4821-a6f6-71a188eaaee0';
 $jsonData = file_get_contents($url);
 $data = json_decode($jsonData, true);
 
-if (!empty($data)) {
+if (data) {
     $users = $data['users'];
     
     $usersPerPage = 10;
